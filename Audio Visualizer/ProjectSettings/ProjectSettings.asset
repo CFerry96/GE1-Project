@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: f9d0bb80a10c0304f8f570c7769cb751
+  productGUID: b7d1613831f50a84f9c8256589b9636f
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: GE1 Project
+  productName: Audio Visualizer
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -650,8 +650,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 678031c4-cdb6-48bb-bb12-ea8260ec048b
-  projectName: GE1 Project
+  cloudProjectId: b15a6bcb-b871-45f6-a72e-9b5b4e6db88d
+  projectName: Audio Visualizer
   organizationId: cillianferry96
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
