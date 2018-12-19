@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioViz1 : MonoBehaviour {
+public class Rings : MonoBehaviour {
 
     public float scale = 10;
     List<GameObject> elements = new List<GameObject>();
