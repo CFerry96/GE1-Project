@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioViz1 : MonoBehaviour {
+
     public float scale = 10;
     List<GameObject> elements = new List<GameObject>();
-	// Use this for initialization
+	
+
 	void Start () {
         CreateVisualisers();
 
@@ -30,16 +32,12 @@ public class AudioViz1 : MonoBehaviour {
             GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             cylinder.transform.SetPositionAndRotation(p, q);
             cylinder.transform.parent = this.transform;
-            cylinder.GetComponent<Renderer>().material.color = Color.HSVToRGB(
-                i / (float)AudioAnalyzer.frameSize
-                , 1
-                , 1
-                );
+            //cylinder.GetComponent<Renderer>().material.color = Color.HSVToRGB(i / (float)AudioAnalyzer.frameSize, 1, 1);
             elements.Add(cylinder);
         }
     }
 
-    // Update is called once per frame
+   
     void Update () {
         for (int i = 0; i < elements.Count; i++) {
             elements[i].transform.localScale = new Vector3(1, 1 + AudioAnalyzer.spectrum[i] * scale, 1);
