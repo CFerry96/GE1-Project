@@ -9,8 +9,8 @@ public class Background : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.transform.parent = this.transform;
+        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        sphere.transform.parent = this.transform;
     }
 
     // Update is called once per frame

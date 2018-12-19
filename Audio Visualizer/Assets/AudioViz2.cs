@@ -27,15 +27,11 @@ public class AudioViz2 : MonoBehaviour {
             Quaternion q = Quaternion.AngleAxis(theta * i * Mathf.Rad2Deg, Vector3.up);
             q = transform.rotation * q;
 
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.SetPositionAndRotation(p, q);
-            cube.transform.parent = this.transform;
-            cube.GetComponent<Renderer>().material.color = Color.HSVToRGB(
-                i / (float)AudioAnalyzer.bands.Length
-                , 1
-                , 1
-                );
-            elements.Add(cube);
+            GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+            cylinder.transform.SetPositionAndRotation(p, q);
+            cylinder.transform.parent = this.transform;
+            //cylinder.GetComponent<Renderer>().material.color = (0,255,0);
+            elements.Add(cylinder);
         }
     }
 
@@ -48,3 +44,10 @@ public class AudioViz2 : MonoBehaviour {
         }
 	}
 }
+
+/*Color.HSVToRGB(
+                i / (float)AudioAnalyzer.bands.Length
+                , 1
+                , 1
+                );
+*/

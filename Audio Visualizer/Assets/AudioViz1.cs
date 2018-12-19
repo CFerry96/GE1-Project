@@ -27,15 +27,15 @@ public class AudioViz1 : MonoBehaviour {
             Quaternion q = Quaternion.AngleAxis(theta * i * Mathf.Rad2Deg, Vector3.up);
             q = transform.rotation * q;
 
-            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            cube.transform.SetPositionAndRotation(p, q);
-            cube.transform.parent = this.transform;
-            cube.GetComponent<Renderer>().material.color = Color.HSVToRGB(
+            GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+            cylinder.transform.SetPositionAndRotation(p, q);
+            cylinder.transform.parent = this.transform;
+            cylinder.GetComponent<Renderer>().material.color = Color.HSVToRGB(
                 i / (float)AudioAnalyzer.frameSize
                 , 1
                 , 1
                 );
-            elements.Add(cube);
+            elements.Add(cylinder);
         }
     }
 
