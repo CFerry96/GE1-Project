@@ -106,7 +106,7 @@ public class AudioAnalyzer : MonoBehaviour {
         for (int i = 0; i < bands.Length; i++)
         {
             int start = (int)Mathf.Pow(2, i) - 1;
-            int width = (int)Mathf.Pow(2, i);
+            int width = (int)Mathf.Pow(2, i) + 1;
             int end = start + width;
             float average = 0;
             for (int j = start; j < end; j++)

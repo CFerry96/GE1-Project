@@ -307,10 +307,10 @@ MonoBehaviour:
   rmsValue: 0
   dbValue: 0
   maxVisualScale: 25
-  visualModifier: 100
+  visualModifier: 2000
   smoothSpeed: 10
   keepPercentage: 0.2
-  amnVisual: 7
+  amnVisual: 10
 --- !u!81 &1409413445
 AudioListener:
   m_ObjectHideFlags: 0
