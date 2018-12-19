@@ -30,8 +30,12 @@ public class AudioViz2 : MonoBehaviour {
             GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             cylinder.transform.SetPositionAndRotation(p, q);
             cylinder.transform.parent = this.transform;
-            //cylinder.GetComponent<Renderer>().material.color = (0,255,0);
-            elements.Add(cylinder);
+            cylinder.GetComponent<Renderer>().material.color = Color.HSVToRGB(
+            i / (float)AudioAnalyzer.bands.Length
+                , 1
+                , 1
+                );
+        elements.Add(cylinder);
         }
     }
 

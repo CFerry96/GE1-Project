@@ -19,7 +19,7 @@ public class AudioAnalyzer : MonoBehaviour {
     public static float[] bands;
 
     public float binWidth;
-    public float sampleRate;
+    public float sampleRate = 512;
     
     /*
      * 20-60 - Subbase
