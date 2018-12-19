@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 479f55f0bc94aa046bcc4ebc4ce193be
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clip: {instanceID: 0}
+  - amgMic: {fileID: 24300002, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
+  - amgMaster: {fileID: 24300002, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
