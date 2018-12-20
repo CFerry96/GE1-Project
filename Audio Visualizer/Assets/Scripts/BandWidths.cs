@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioViz2 : MonoBehaviour {
+public class BandWidths : MonoBehaviour {
     public float scale = 10;
     List<GameObject> elements = new List<GameObject>();
 	// Use this for initialization

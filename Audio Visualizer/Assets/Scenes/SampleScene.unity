@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -155,9 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!4 &123951678
 Transform:
   m_ObjectHideFlags: 0
@@ -226,9 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &170076734
 Light:
   m_ObjectHideFlags: 0
@@ -288,13 +286,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 170076733}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.31158826, y: -0.22142898, z: 0.13400178, w: 0.9142896}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.984, y: -24.423, z: 7.9150004}
 --- !u!1 &202873704
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,9 +348,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!1 &229479484
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +401,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229479484}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58bd94a09a858534bb88480a706769e8, type: 3}
   m_Name: 
@@ -421,9 +418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,8 +495,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 755621676}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -510,7 +505,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d84c411768980de49b2218a59e5b739e, type: 3}
   m_Name: 
@@ -522,7 +517,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b4ebda227987fb4184344d415b527ad, type: 3}
   m_Name: 
@@ -559,64 +554,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &755621674
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 755621676}
-  - component: {fileID: 755621677}
-  - component: {fileID: 755621675}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &755621675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 755621674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef3f564022ae6a740826220f976467f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeedX: 1
-  rotateSpeedY: 1
-  rotateSpeedZ: 1
---- !u!4 &755621676
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 755621674}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 534669905}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &755621677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 755621674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32165694178a034bb7d7b2768fc57c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scale: 50
-  elements: []
-  radius: 7.25
 --- !u!1 &1318646043
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,9 +641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!1 &1494179756
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,9 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!4 &1494179759
 Transform:
   m_ObjectHideFlags: 0
@@ -889,7 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 479f55f0bc94aa046bcc4ebc4ce193be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useMic: 1
+  useMic: 0
   clip: {fileID: 8300000, guid: d9d599b2ee1f6734a84b9d739c777ade, type: 3}
   amgMic: {fileID: 243959831584434680, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
   amgMaster: {fileID: 24300002, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
@@ -935,9 +870,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!4 &1943339495
 Transform:
   m_ObjectHideFlags: 0
@@ -993,9 +927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 500
-  elements: []
-  radius: 30
+  intensity: 200
+  radius: 45
 --- !u!4 &1995705273
 Transform:
   m_ObjectHideFlags: 0

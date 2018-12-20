@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class Rings : MonoBehaviour {
 
-    public float scale = 10;
+    public float intensity = 10;
+    GameObject cylinder;
+
     List<GameObject> elements = new List<GameObject>();
 	
 
-	void Start () {
+	void Start ()
+    {
         CreateVisualisers();
-
     }
 
     public float radius = 50;
@@ -29,18 +31,27 @@ public class Rings : MonoBehaviour {
             Quaternion q = Quaternion.AngleAxis(theta * i * Mathf.Rad2Deg, Vector3.up);
             q = transform.rotation * q;
 
-            GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+            cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             cylinder.transform.SetPositionAndRotation(p, q);
             cylinder.transform.parent = this.transform;
-            //cylinder.GetComponent<Renderer>().material.color = Color.HSVToRGB(i / (float)AudioAnalyzer.frameSize, 1, 1);
+            //cylinder.GetComponent<Renderer>().material.color = new Color(1f,255f,1f);
             elements.Add(cylinder);
         }
     }
 
    
-    void Update () {
-        for (int i = 0; i < elements.Count; i++) {
-            elements[i].transform.localScale = new Vector3(1, 1 + AudioAnalyzer.spectrum[i] * scale, 1);
+    void Update ()
+    {
+        
+        for (int i = 0; i < elements.Count; i++)
+        {
+            float change = elements[i].transform.localScale.y / 3;
+
+            elements[i].transform.localScale = new Vector3(1, 1 + AudioAnalyzer.spectrum[i] * intensity, 1);
+            elements[i].GetComponent<Renderer>().material.color = new Color(0f, change , 0f);
+           
         }
+
+        
 	}
 }
