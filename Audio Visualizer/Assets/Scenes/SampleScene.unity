@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!4 &123951678
 Transform:
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!1 &170076733
 GameObject:
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!1 &229479484
 GameObject:
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!1 &534669902
 GameObject:
@@ -505,7 +505,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d84c411768980de49b2218a59e5b739e, type: 3}
   m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b4ebda227987fb4184344d415b527ad, type: 3}
   m_Name: 
@@ -641,7 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!1 &1494179756
 GameObject:
@@ -685,7 +685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!4 &1494179759
 Transform:
@@ -727,7 +727,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: d0f5f4052e54a7e4e9be21e039a19491,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d9d599b2ee1f6734a84b9d739c777ade, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5256b45f46daeff438b492a2de194b35, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   useMic: 0
-  clip: {fileID: 8300000, guid: d9d599b2ee1f6734a84b9d739c777ade, type: 3}
+  clip: {fileID: 8300000, guid: 5256b45f46daeff438b492a2de194b35, type: 3}
   amgMic: {fileID: 243959831584434680, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
   amgMaster: {fileID: 24300002, guid: d0f5f4052e54a7e4e9be21e039a19491, type: 2}
   selectedDevice: 
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!4 &1943339495
 Transform:
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa7b50c32c59954b8d54b5558b8531e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 200
+  intensity: 1000
   radius: 45
 --- !u!4 &1995705273
 Transform:
