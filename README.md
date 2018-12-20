@@ -15,7 +15,7 @@ modes that each would tailor more to the feel of the two different types of musi
 As mentioned previously i hope to have the projects controls ported to a controller that will change the shape of the visualization 
 depending on what button you press.
 
-![Screenshot](AudioVisualizer/Vis1.png)
+![](Audio%20Visualizer/Vis1.png)
 
 Breakdown
 The End product turned out almost as well as i had hoped. After looking at tutorials from youtube and unity poles I managed to come up 
@@ -28,6 +28,6 @@ flute instrumental, a ballad, and a reel. I chose those specific files to show h
 The ability to alter the intensity is also available to allow for different combinations based on instument frequency.
 The colours of the elements on the rings change shades of green based on whether they are moving or not.
 
-
+![](Audio%20Visualizer/Vis%202.png)
 
 
