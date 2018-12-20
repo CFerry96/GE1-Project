@@ -27,6 +27,7 @@ mic input and audio file play back. I also added three differnt tracks all with 
 flute instrumental, a ballad, and a reel. I chose those specific files to show how diverse the visualiser can be.
 The ability to alter the intensity is also available to allow for different combinations based on instument frequency.
 The colours of the elements on the rings change shades of green based on whether they are moving or not.
+The ability to run the program on mobile is also available with gyroscope camera movement implemented to allow the user to look around and enjoy the experience.
 
 ![](Audio%20Visualizer/Vis%202.png)
 
