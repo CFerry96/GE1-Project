@@ -29,7 +29,7 @@ The ability to alter the intensity is also available to allow for different comb
 The colours of the elements on the rings change shades of green based on whether they are moving or not.
 The ability to run the program on mobile is also available with gyroscope camera movement implemented to allow the user to look around and enjoy the experience.
 
-![](Audio%20Visualizer/Vis%202.png)
+![](Audio%20Visualizer/Gif.gif)
 
 Youtube Video Link - https://youtu.be/wszy9nBCWrA
 
