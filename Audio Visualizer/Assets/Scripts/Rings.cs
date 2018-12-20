@@ -28,13 +28,12 @@ public class Rings : MonoBehaviour {
                 , Mathf.Cos(theta * i) * radius
                 );
             p = transform.TransformPoint(p);
-            Quaternion q = Quaternion.AngleAxis(theta * i * Mathf.Rad2Deg, Vector3.up);
+            Quaternion q = Quaternion.AngleAxis(theta * i * Mathf.Rad2Deg, Vector3.up); //spawn will be a circle
             q = transform.rotation * q;
 
-            cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+            cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder); // spawns primitives
             cylinder.transform.SetPositionAndRotation(p, q);
             cylinder.transform.parent = this.transform;
-            //cylinder.GetComponent<Renderer>().material.color = new Color(1f,255f,1f);
             elements.Add(cylinder);
         }
     }
@@ -47,8 +46,8 @@ public class Rings : MonoBehaviour {
         {
             float change = elements[i].transform.localScale.y / 3;
 
-            elements[i].transform.localScale = new Vector3(1, 1 + AudioAnalyzer.spectrum[i] * intensity, 1);
-            elements[i].GetComponent<Renderer>().material.color = new Color(0f, change , 0f);
+            elements[i].transform.localScale = new Vector3(1, 1 + AudioAnalyzer.spectrum[i] * intensity, 1); // Changes size based on intesity
+            elements[i].GetComponent<Renderer>().material.color = new Color(0f, change , 0f); // Changes color based on intensity
            
         }
 
